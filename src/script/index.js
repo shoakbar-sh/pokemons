@@ -4625,7 +4625,7 @@ var pokemons = [
 
 let wrapper = document.querySelector(`.wrapper`);
 
-for (let i = 0; i < pokemons.length-143; i++) {
+for (let i = 0; i < pokemons.length; i++) {
 
    let card = document.createElement("div");
 
@@ -4636,8 +4636,8 @@ for (let i = 0; i < pokemons.length-143; i++) {
 
    card.innerHTML = `
    <small class="absolute ml-[15px] mt-[10px] text-[20px]">"${pokemons[i].num}"</small>
-   <img src="${pokemons[i].img}" alt="" class="pt-[30px] pl-[75px]">
-   <hr class="mt-[45px]">
+   <img src="${pokemons[i].img}" alt="" class="pt-[45px] pl-[75px]">
+   <hr class="mt-[50px]">
    <h1 class="mt-4 ml-[30px] font-bold text-[24px]">"${pokemons[i].name}"</h1>
    <p class="font-semibold text-[20px] ml-[30px] ">"${pokemons[i].type.join(" ")}"</p>
    <div class="flex">
