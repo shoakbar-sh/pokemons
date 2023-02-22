@@ -31,17 +31,20 @@
       </main>
 
       <div class="mt-[70px] ml-[183px]">
-         <select aria-label="" class="bg-white w-[260px] h-[60px] rounded-[15px] text-center text-[24px] font-bold ">
-            <option value="#">Gross</option>
+         <select id="type"
+            class="bg-white w-[260px] h-[60px] rounded-[15px] text-center text-[24px] font-bold ">
+            <option disabled selected>Type</option>
          </select>
 
          <input type="search" placeholder="Search"
             class="bg-white w-[300px] h-[60px] pl-[30px] text-center rounded-[15px] text-[24px] font-bold ml-[35px] placeholder:text-black placeholder:text-left">
          <span><i class='bx bx-search absolute text-[25px] ml-[-43px] pt-[20px]'></i></span>
 
-         <select aria-label=""
+         <select id="nomi"
             class="bg-white w-[260px] h-[60px] rounded-[15px] text-center ml-[35px] text-[24px] font-bold ">
-            <option value="#">Aa-Zz</option>
+            <option disabled selected>Saralash</option>
+            <option value="A-z">A-z</option>
+            <option value="Z-a">Z-a</option>
          </select>
 
          <button
