@@ -1,6 +1,5 @@
 "use strict";
 
-
 var pokemons = [
    {
       "id": 1,
@@ -4624,8 +4623,10 @@ var pokemons = [
 
 
 let wrapper = document.querySelector(`.wrapper`),
-type = document.querySelector('#type'),
-   nomi = document.querySelector('#nomi');
+   type = document.querySelector('#type'),
+   nomi = document.querySelector('#nomi'),
+   input = document.querySelector("#input");
+
 
 function cardRender() {
 
@@ -4656,6 +4657,7 @@ function cardRender() {
 cardRender()
 
 
+// =========== Cards start ============
 
 function renderCards(data) {
 
@@ -4684,27 +4686,38 @@ function renderCards(data) {
    })
 }
 
-
-function dynamicOption() {
-   const sortType = [];
-
-   pokemons.forEach((item) => {
-      if (!sortType.includes(item.type)) {
-         sortType.push(item.type);
-      }
-   });
+// =========== Cards end ============
 
 
-   sortType.sort();
-   sortType.forEach((item) => {
-      const option = document.createElement("option");
-      option.innerHTML = item;
-      type.append(option);
-   });
+// ============ Type start ==========
+
+function dynamicOption(arr) {
+   let sortType = []
+   arr.forEach((value) => {
+      value.type.forEach(item => {
+         if (!sortType.includes(item)) {
+            sortType.push(item)
+         }
+      })
+   })
+
+   console.log(sortType);
+
+   sortType.forEach((value) => {
+      let optionSelect = `
+        <option value=${value}>${value}</option>
+      `
+      type.insertAdjacentHTML("beforeend", optionSelect)
+   })
 }
 
-dynamicOption()
+renderCards(pokemons)
+dynamicOption(pokemons)
 
+// ============ Type end ==========
+
+
+// ============ Alfavit start ==========
 
 const sortName = () => {
    let sortPokemons = pokemons.sort((a, b) => {
@@ -4715,6 +4728,7 @@ const sortName = () => {
 }
 
 sortName()
+
 
 nomi.addEventListener('change', (e) => {
    if (e.target.value === "A-z") {
@@ -4732,6 +4746,10 @@ nomi.addEventListener('change', (e) => {
    }
 });
 
+// ============ Alfavit end ==========
+
+
+// ============Search start ==========
 
 type.addEventListener('change', (e) => {
    const sortTuri = pokemons.filter((item) => {
@@ -4740,3 +4758,17 @@ type.addEventListener('change', (e) => {
 
    renderCards(sortTuri);
 });
+
+
+input.addEventListener("keyup", (e) => {
+
+   console.log(e.target.value);
+
+   let filterArr = pokemons.filter((item) =>
+      item.name.toLowerCase().includes(e.target.value.toLowerCase())
+   );
+
+   renderCards(filterArr)
+});
+
+// ============Search end ==========

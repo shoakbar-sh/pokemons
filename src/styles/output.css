@@ -525,72 +525,64 @@ video {
   margin-left: 455px;
 }
 
-.mt-\[50px\] {
-  margin-top: 50px;
-}
-
-.mt-\[\] {
-  margin-top: ;
-}
-
 .mt-\[70px\] {
   margin-top: 70px;
 }
 
-.ml-\[\] {
-  margin-left: ;
-}
-
-.ml-\[348px\] {
-  margin-left: 348px;
-}
-
-.ml-\[248px\] {
-  margin-left: 248px;
-}
-
-.ml-\[148px\] {
-  margin-left: 148px;
+.ml-\[183px\] {
+  margin-left: 183px;
 }
 
 .ml-\[35px\] {
   margin-left: 35px;
 }
 
-.ml-\[-10px\] {
-  margin-left: -10px;
-}
-
-.ml-\[-30px\] {
-  margin-left: -30px;
-}
-
 .ml-\[-43px\] {
   margin-left: -43px;
+}
+
+.mt-\[100px\] {
+  margin-top: 100px;
+}
+
+.ml-\[15px\] {
+  margin-left: 15px;
+}
+
+.mt-\[10px\] {
+  margin-top: 10px;
+}
+
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.ml-\[30px\] {
+  margin-left: 30px;
+}
+
+.ml-\[20px\] {
+  margin-left: 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-\[17780px\] {
+  height: 17780px;
 }
 
 .h-\[60px\] {
   height: 60px;
 }
 
-.h-\[22\] {
-  height: 22;
-}
-
-.h-\[225px\] {
-  height: 225px;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[60p\] {
-  height: 60p;
-}
-
-.min-h-\[1480px\] {
-  min-height: 1480px;
+.h-\[423px\] {
+  height: 423px;
 }
 
 .w-\[1518px\] {
@@ -601,14 +593,6 @@ video {
   width: 260px;
 }
 
-.w-\[\] {
-  width: ;
-}
-
-.w-\[610px\] {
-  width: 610px;
-}
-
 .w-\[300px\] {
   width: 300px;
 }
@@ -617,44 +601,32 @@ video {
   width: 200px;
 }
 
-.border-spacing-1 {
-  --tw-border-spacing-x: 0.25rem;
-  --tw-border-spacing-y: 0.25rem;
-  border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
+.w-\[307px\] {
+  width: 307px;
 }
 
-.gap-\[\] {
-  gap: ;
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
-.rounded {
-  border-radius: 0.25rem;
+.justify-center {
+  justify-content: center;
+}
+
+.gap-\[30px\] {
+  gap: 30px;
 }
 
 .rounded-\[15px\] {
   border-radius: 15px;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
+.rounded-\[20px\] {
+  border-radius: 20px;
 }
 
 .border {
   border-width: 1px;
-}
-
-.border-solid {
-  border-style: solid;
-}
-
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
-.bg-\[\#FFD845\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 216 69 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -662,55 +634,37 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-red-300 {
+.bg-\[\#FFD845\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
-}
-
-.to-black {
-  --tw-gradient-to: #000;
+  background-color: rgb(255 216 69 / var(--tw-bg-opacity));
 }
 
 .p-0 {
   padding: 0px;
 }
 
-.py-\[\] {
-  padding-top: ;
-  padding-bottom: ;
-}
-
-.py-\[16px\] {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
 .pt-\[50px\] {
   padding-top: 50px;
-}
-
-.pt-\[150px\] {
-  padding-top: 150px;
-}
-
-.pt-\[20px\] {
-  padding-top: 20px;
 }
 
 .pl-\[30px\] {
   padding-left: 30px;
 }
 
-.pr-\[\] {
-  padding-right: ;
+.pt-\[20px\] {
+  padding-top: 20px;
+}
+
+.pt-\[45px\] {
+  padding-top: 45px;
+}
+
+.pl-\[75px\] {
+  padding-left: 75px;
 }
 
 .text-center {
   text-align: center;
-}
-
-.text-start {
-  text-align: start;
 }
 
 .text-\[24px\] {
@@ -721,33 +675,24 @@ video {
   font-size: 25px;
 }
 
+.text-\[20px\] {
+  font-size: 20px;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
-.text-\[\] {
-  color: ;
+.font-semibold {
+  font-weight: 600;
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+.font-medium {
+  font-weight: 500;
 }
 
-.placeholder\:ml-\[-10px\]::-moz-placeholder {
-  margin-left: -10px;
-}
-
-.placeholder\:ml-\[-10px\]::placeholder {
-  margin-left: -10px;
-}
-
-.placeholder\:ml-\[25px\]::-moz-placeholder {
-  margin-left: 25px;
-}
-
-.placeholder\:ml-\[25px\]::placeholder {
-  margin-left: 25px;
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .placeholder\:text-left::-moz-placeholder {
@@ -756,14 +701,6 @@ video {
 
 .placeholder\:text-left::placeholder {
   text-align: left;
-}
-
-.placeholder\:text-start::-moz-placeholder {
-  text-align: start;
-}
-
-.placeholder\:text-start::placeholder {
-  text-align: start;
 }
 
 .placeholder\:text-black::-moz-placeholder {
