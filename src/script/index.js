@@ -4753,9 +4753,10 @@ nomi.addEventListener('change', (e) => {
 
 type.addEventListener('change', (e) => {
    const sortTuri = pokemons.filter((item) => {
-      return item.type === e.target.value;
+      return item.type.includes(e.target.value);
    })
 
+   console.log(sortTuri);
    renderCards(sortTuri);
 });
 
