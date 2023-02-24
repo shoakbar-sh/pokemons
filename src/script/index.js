@@ -4756,7 +4756,6 @@ type.addEventListener('change', (e) => {
       return item.type.includes(e.target.value);
    })
 
-   console.log(sortTuri);
    renderCards(sortTuri);
 });
 
