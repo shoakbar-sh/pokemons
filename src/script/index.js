@@ -4714,6 +4714,15 @@ function dynamicOption(arr) {
 renderCards(pokemons)
 dynamicOption(pokemons)
 
+
+type.addEventListener('change', (e) => {
+   const sortTuri = pokemons.filter((item) => {
+      return item.type.includes(e.target.value);
+   })
+
+   renderCards(sortTuri);
+});
+
 // ============ Type end ==========
 
 
@@ -4750,15 +4759,6 @@ nomi.addEventListener('change', (e) => {
 
 
 // ============Search start ==========
-
-type.addEventListener('change', (e) => {
-   const sortTuri = pokemons.filter((item) => {
-      return item.type.includes(e.target.value);
-   })
-
-   renderCards(sortTuri);
-});
-
 
 input.addEventListener("keyup", (e) => {
 
