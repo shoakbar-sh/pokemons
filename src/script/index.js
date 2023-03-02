@@ -4645,8 +4645,8 @@ function cardRender() {
       <h1 class="mt-4 ml-[30px] font-bold text-[24px]">${e.name}</h1>
       <p class="font-semibold text-[20px] ml-[30px] ">${e.type.join(" ")}</p>
       <div class="flex">
-        <h1 class="font-bold ml-[30px] text-[24px] mt-4">${e.weight}</h1>
-        <h1 class="font-bold ml-[20px] text-[24px] mt-4">${e.height}</h1>
+         <h1 class="font-bold ml-[30px] text-[24px] mt-4">${e.weight}</h1>
+         <h1 class="font-bold ml-[20px] text-[24px] mt-4">${e.height}</h1>
       </div>
       <h1 class="ml-[30px] mt-[10px] text-[20px] font-medium">${e.weaknesses.join(" ")}</h1>
       `
@@ -4677,8 +4677,8 @@ function renderCards(data) {
       <h1 class="mt-4 ml-[30px] font-bold text-[24px]">${e.name}</h1>
       <p class="font-semibold text-[20px] ml-[30px] ">${e.type.join(" ")}</p>
       <div class="flex">
-        <h1 class="font-bold ml-[30px] text-[24px] mt-4">${e.weight}</h1>
-        <h1 class="font-bold ml-[20px] text-[24px] mt-4">${e.height}</h1>
+         <h1 class="font-bold ml-[30px] text-[24px] mt-4">${e.weight}</h1>
+         <h1 class="font-bold ml-[20px] text-[24px] mt-4">${e.height}</h1>
       </div>
       <h1 class="ml-[30px] mt-[10px] text-[20px] font-medium">${e.weaknesses.join(" ")}</h1>
       `
