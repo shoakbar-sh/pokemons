@@ -4639,16 +4639,16 @@ function cardRender() {
       );
 
       card.innerHTML = `
-      <small class="absolute ml-[15px] mt-[10px] text-[20px]">"${e.num}"</small>
+      <small class="absolute ml-[15px] mt-[10px] text-[20px]">${e.num}</small>
       <img src="${e.img}" alt="" class="pt-[45px] pl-[75px]">
       <hr class="mt-[50px]">
-      <h1 class="mt-4 ml-[30px] font-bold text-[24px]">"${e.name}"</h1>
-      <p class="font-semibold text-[20px] ml-[30px] ">"${e.type.join(" ")}"</p>
+      <h1 class="mt-4 ml-[30px] font-bold text-[24px]">${e.name}</h1>
+      <p class="font-semibold text-[20px] ml-[30px] ">${e.type.join(" ")}</p>
       <div class="flex">
-        <h1 class="font-bold ml-[30px] text-[24px] mt-4">"${e.weight}"</h1>
-        <h1 class="font-bold ml-[20px] text-[24px] mt-4">"${e.height}"</h1>
+        <h1 class="font-bold ml-[30px] text-[24px] mt-4">${e.weight}</h1>
+        <h1 class="font-bold ml-[20px] text-[24px] mt-4">${e.height}</h1>
       </div>
-      <h1 class="ml-[30px] mt-[10px] text-[20px] font-medium">"${e.weaknesses.join(" ")}"</h1>
+      <h1 class="ml-[30px] mt-[10px] text-[20px] font-medium">${e.weaknesses.join(" ")}</h1>
       `
       wrapper.append(card);
    })
@@ -4671,16 +4671,16 @@ function renderCards(data) {
       );
 
       card.innerHTML = `
-      <small class="absolute ml-[15px] mt-[10px] text-[20px]">"${e.num}"</small>
+      <small class="absolute ml-[15px] mt-[10px] text-[20px]">${e.num}</small>
       <img src="${e.img}" alt="" class="pt-[45px] pl-[75px]">
       <hr class="mt-[50px]">
-      <h1 class="mt-4 ml-[30px] font-bold text-[24px]">"${e.name}"</h1>
-      <p class="font-semibold text-[20px] ml-[30px] ">"${e.type.join(" ")}"</p>
+      <h1 class="mt-4 ml-[30px] font-bold text-[24px]">${e.name}</h1>
+      <p class="font-semibold text-[20px] ml-[30px] ">${e.type.join(" ")}</p>
       <div class="flex">
-        <h1 class="font-bold ml-[30px] text-[24px] mt-4">"${e.weight}"</h1>
-        <h1 class="font-bold ml-[20px] text-[24px] mt-4">"${e.height}"</h1>
+        <h1 class="font-bold ml-[30px] text-[24px] mt-4">${e.weight}</h1>
+        <h1 class="font-bold ml-[20px] text-[24px] mt-4">${e.height}</h1>
       </div>
-      <h1 class="ml-[30px] mt-[10px] text-[20px] font-medium">"${e.weaknesses.join(" ")}"</h1>
+      <h1 class="ml-[30px] mt-[10px] text-[20px] font-medium">${e.weaknesses.join(" ")}</h1>
       `
       wrapper.append(card);
    })
