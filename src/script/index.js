@@ -4644,10 +4644,10 @@ function cardRender() {
       <hr class="mt-[50px]">
       <h1 class="mt-4 ml-[30px] font-bold text-[24px]">${e.name}</h1>
       <p class="font-semibold text-[20px] ml-[30px] ">${e.type.join(" ")}</p>
-      <div class="flex">
-         <h1 class="font-bold ml-[30px] text-[24px] mt-4">${e.weight}</h1>
-         <h1 class="font-bold ml-[20px] text-[24px] mt-4">${e.height}</h1>
-      </div>
+        <div class="flex">
+           <h1 class="font-bold ml-[30px] text-[24px] mt-4">${e.weight}</h1>
+           <h1 class="font-bold ml-[20px] text-[24px] mt-4">${e.height}</h1>
+        </div>
       <h1 class="ml-[30px] mt-[10px] text-[20px] font-medium">${e.weaknesses.join(" ")}</h1>
       `
       wrapper.append(card);
@@ -4676,10 +4676,10 @@ function renderCards(data) {
       <hr class="mt-[50px]">
       <h1 class="mt-4 ml-[30px] font-bold text-[24px]">${e.name}</h1>
       <p class="font-semibold text-[20px] ml-[30px] ">${e.type.join(" ")}</p>
-      <div class="flex">
-         <h1 class="font-bold ml-[30px] text-[24px] mt-4">${e.weight}</h1>
-         <h1 class="font-bold ml-[20px] text-[24px] mt-4">${e.height}</h1>
-      </div>
+        <div class="flex">
+           <h1 class="font-bold ml-[30px] text-[24px] mt-4">${e.weight}</h1>
+           <h1 class="font-bold ml-[20px] text-[24px] mt-4">${e.height}</h1>
+        </div>
       <h1 class="ml-[30px] mt-[10px] text-[20px] font-medium">${e.weaknesses.join(" ")}</h1>
       `
       wrapper.append(card);
@@ -4687,7 +4687,6 @@ function renderCards(data) {
 }
 
 // =========== Cards end ============
-
 
 // ============ Type start ==========
 
@@ -4700,8 +4699,6 @@ function dynamicOption(arr) {
          }
       })
    })
-
-   console.log(sortType);
 
    sortType.forEach((value) => {
       let optionSelect = `
@@ -4725,15 +4722,12 @@ type.addEventListener('change', (e) => {
 
 // ============ Type end ==========
 
-
 // ============ Alfavit start ==========
 
 const sortName = () => {
    let sortPokemons = pokemons.sort((a, b) => {
       return a.name.localeCompare(b.name)
    });
-
-   console.log(sortPokemons);
 }
 
 sortName()
@@ -4761,8 +4755,6 @@ nomi.addEventListener('change', (e) => {
 // ============Search start ==========
 
 input.addEventListener("keyup", (e) => {
-
-   console.log(e.target.value);
 
    let filterArr = pokemons.filter((item) =>
       item.name.toLowerCase().includes(e.target.value.toLowerCase())
